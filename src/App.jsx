@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import FriendDetails from './pages/Frienddetails';
 import Timeline from './pages/Timeline';
 import Stats from './pages/Stats';
-import NotFound from './pages/NotFound';
+import NotFound from './pages/Notfound';
 import './App.css';
 
 function App() {

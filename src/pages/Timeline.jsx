@@ -74,7 +74,7 @@ function Timeline() {
                   className={`filter-option ${filterType === 'Call' ? 'active' : ''}`}
                   onClick={() => { setFilterType('Call'); setIsDropdownOpen(false); }}
                 >
-                  Calls
+                  Callss
                 </div>
                 <div 
                   className={`filter-option ${filterType === 'Text' ? 'active' : ''}`}
