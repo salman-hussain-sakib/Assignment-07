@@ -67,7 +67,7 @@ function FriendDetails() {
               <p className="work-bio">"{friend.work_bio}"</p>
             )}
 
-            {/* 👇 Email Address - সরাসরি ইমেইল দেখাবে */}
+            
             {friend.email && (
               <div className="email-address">
                 {friend.email}
