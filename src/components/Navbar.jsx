@@ -41,7 +41,7 @@ function Navbar() {
             className={`nav-link ${isActive('/stats') ? 'active' : ''}`}
           >
             <img src="/assets/Stats.png" alt="Stats" className="nav-icon" />
-            <span>Statss</span>
+            <span>Stats</span>
           </Link>
         </div>
 
