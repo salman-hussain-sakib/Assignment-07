@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-// এটা যোগ করো
+
 const getCategoryColor = (category) => {
   if (category === 'WORK') return '#FF6B6B';
   if (category === 'FAMILY') return '#4ECDC4';
@@ -36,7 +36,7 @@ function FriendCard({ friend }) {
             ))}
           </div>
 
-          {/* Status Badge */}
+          
           <div
             className="status-badge"
             style={{ backgroundColor: statusColors[friend.status] }}
