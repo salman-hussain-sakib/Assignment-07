@@ -26,7 +26,7 @@ function FriendCard({ friend }) {
         <div className="friend-info">
           <h3>{friend.name}</h3>
           <p className="days-since">
-            📅 {friend.days_since_contact} daysa ago
+            📅 {friend.days_since_contact} days ago
           </p>
 
           {/* Tags */}
