@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #FFFFFF;
+}
+
+.home {
+  min-height: 100vh;
+  padding: 32px 24px;
+  background-color: #FFFFFF;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Loading */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #E5E7EB;
+  border-top: 3px solid #2C5F4F;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Banner Section */
+.banner {
+  background: white;;
+  border-radius: 20px;
+  padding: 56px 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.banner-content p {
+  font-size: 16px;
+  color:black;
+  margin-bottom: 28px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.add-friend-btn {
+  background: #2C5F4F;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.add-friend-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  background:#2C5F4F;
+}
+
+.plus-icon {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Summary Section */
+.summary-section {
+  margin-bottom: 40px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #F0F0F0;
+}
+
+.summary-value {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 6px;
+}
+
+.summary-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Friends Section */
+.friends-section {
+  margin-top: 20px;
+}
+
+.friends-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.friend-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.friend-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 16px;
+  border: 1px solid #F0F0F0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.friend-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  border-color: #E0E0E0;
+}
+
+.friend-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.friend-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.friend-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 4px;
+}
+
+.friend-days {
+  font-size: 13px;
+  color: #9CA3AF;
+  margin-bottom: 8px;
+}
+
+.friend-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 12px;
+  min-height: 26px;
+}
+
+.friend-tag {
+  background: #F3F4F6;
+  color: #6B7280;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Status Badge - TEXT WIDTH ONUJAYI */
+.friend-status {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.status-overdue {
+  background-color: #EF4444;
+}
+
+.status-almost-due {
+  background-color: #F59E0B;
+}
+
+.status-on-track {
+  background-color: #10B981;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .friends-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 20px 16px;
+  }
+  
+  .banner {
+    padding: 40px 24px;
+  }
+  
+  .banner-content h1 {
+    font-size: 32px;
+  }
+  
+  .banner-content p {
+    font-size: 15px;
+  }
+  
+  .friends-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .summary-value {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 28px;
+  }
+  
+  .banner-content p {
+    font-size: 14px;
+  }
+  
+  .add-friend-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .summary-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .friends-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .friend-card {
+    padding: 16px;
+  }
+}
